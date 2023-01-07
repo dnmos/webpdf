@@ -4,6 +4,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Initial setup](#initial-setup)
+* [Crontab](#crontab)
 * [Relative links](#relative-links)
 
 ## General info
@@ -39,6 +40,17 @@ Check Chrome installed
 ```
 $ google-chrome
 ```
+
+## Crontab
+
+Add user www to the group crontab
+Edit your crontab
+```
+$ sudo usermod -a -G crontab www
+$ crontab -e
+* * * * * path_to_python3 pyfile.py
+```
+m h dom mon dow command
 
 ## Relative links
 
