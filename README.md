@@ -48,7 +48,7 @@ Edit your crontab
 ```
 $ sudo usermod -a -G crontab www
 $ crontab -e
-* * * * * path_to_python3 pyfile.py
+0 0 * * * cd /home/www/webpdf/ && /home/www/webpdf/env/bin/python3.10 /home/www/webpdf/html2pdfall.py
 ```
 m h dom mon dow command
 

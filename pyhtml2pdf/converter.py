@@ -74,7 +74,7 @@ def __get_pdf_from_html(
 
 	driver.get(path)
 
-	with open('./pyhtml2pdf/converter.css', 'r') as css_file:
+	with open('/home/www/webpdf/pyhtml2pdf/converter.css', 'r') as css_file:
 		css_data = css_file.read().replace('\n', '')
 
 	css_str = f"\
