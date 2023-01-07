@@ -1,0 +1,116 @@
+@media print{
+	.custom-logo {
+		float: left;
+	}
+	a[href]:after {
+		content: none !important;
+	}
+	.entry-content .wp-block-embed-youtube,
+	.entry-content .google-map,
+	.entry-content .aff-widget,
+	.entry-content .wp-block-columns.has-4-columns {
+		display: none;
+	}
+	.wp-block-image {
+		width: 450px;
+		display: block;
+		margin: auto;
+	}
+	.entry-content .tripster-widget {
+		margin-bottom: 30px;
+	}
+	.entry-content .tripster-widget .expcard {
+		position: relative;
+		overflow: hidden;
+		margin: 0 0 20px;
+		z-index: 1;
+	}
+	.entry-content .tripster-widget .expcard__img-link {
+		position: relative;
+		float: left;
+		width: 230px;
+		max-height: 241px;
+		padding-top: 4px;
+		overflow: hidden;
+	}
+	.entry-content .tripster-widget .expcard__img {
+		width: 280px;
+	}
+	.entry-content .tripster-widget .expcard__img {
+		display: block;
+		max-width: 384px;
+	}
+	.entry-content .tripster-widget .expcard-info {
+		overflow: hidden;
+		margin: 0 0 0 250px;
+		padding: 0;
+		text-align: left;
+	}
+	.entry-content .tripster-widget .expcard__title {
+		color: #333;
+		font-weight: 600;
+		font-size: 2rem;
+		line-height: 1.2;
+		text-decoration: none;
+		-webkit-transition: color .2s ease;
+		-o-transition: color .2s ease;
+		transition: color .2s ease;
+	}
+	.entry-content .tripster-widget .expcard__text {
+		display: block;
+		margin: 10px 0;
+		font-size: 15px;
+		color: #333;
+		line-height: 1.45em;
+		text-decoration: none;
+	}
+	.entry-content .tripster-widget .expcard__details {
+		margin: 20px 0 0;
+	}
+	.entry-content .tripster-widget .expcard__left_user {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 12px 0 0;
+		color: #333;
+		font-size: 14px;
+		text-decoration: none;
+	}
+	.entry-content .tripster-widget .rating {
+		display: none;
+	}
+	.entry-content .tripster-widget .expcard__review {
+		display: none;
+	}
+	.entry-content .tripster-widget .grey-button {
+		padding: 10px 20px;
+		float: right;
+		margin-top: 0;
+	}
+	.entry-content .tripster-widget .grey-button {
+		display: block;
+		width: auto;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: initial;
+		color: #333;
+		border: 2px solid #ddd;
+		background: 0 0;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		text-transform: uppercase;
+		text-decoration: none;
+		cursor: pointer;
+		-webkit-transition: all .2s ease;
+		-o-transition: all .2s ease;
+		transition: all .2s ease;
+		margin: 0 auto;
+		width: -webkit-max-content;
+		width: -moz-max-content;
+		width: max-content;
+	}
+	.related.posts,
+	#comments, 
+	.site-footer {
+		display: none;
+	}
+}
