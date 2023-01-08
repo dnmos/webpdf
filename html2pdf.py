@@ -1,3 +1,4 @@
 from pyhtml2pdf import converter
+from credentials import site_url
 
-converter.convert('https://visitbudapest.ru/ice-rinks/', './pdf/', 'ice-rinks.pdf')
+converter.convert(site_url, './pdf/', 'site.pdf')
