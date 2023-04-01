@@ -1,9 +1,9 @@
 import requests, json
 from bs4 import BeautifulSoup
 from pyhtml2pdf import converter
-from credentials import site_url, xml_sitemap_urn, headers, api_urn
+import config
 
-request = requests.get(site_url + xml_sitemap_urn, headers=headers)
+request = requests.get(config.SITE_URL + config.XML_SITEMAP_URN, headers=config.HEADERS)
 content = request.text
 
 soup = BeautifulSoup(content, 'xml')
@@ -29,7 +29,7 @@ for uri in all_uri_in_xml_sitemap:
 
 			converter.convert(uri, './pdf/', f'{slug}.pdf')
 
-			request = requests.get(site_url + api_urn + slug, headers=headers)
+			request = requests.get(config.SITE_URL + config.API_URN + slug, headers=config.HEADERS)
 			posts_json = json.loads(request.text)
 			title = posts_json[0]['title']['rendered']
 			print(title) 
