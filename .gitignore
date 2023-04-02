@@ -2,3 +2,4 @@ __pycache__
 webpdf/__pycache__
 env/
 pdf/
+posts_params.json
